@@ -15,3 +15,30 @@ function debounce(fn, delay = 50) {
     return result;
   };
 }
+
+// function debounce(func,wait,immediate){
+//   let timeout,result;
+//   let debounced = function(){
+//     let context = this;
+//     let args = arguments;
+//     if(timeout) clearTimeout(timeout)
+//     if(immediate){
+//       //如果已经执行，不再执行
+//       let callNow = !timeout;
+//       timeout = setTimeout(()=>{
+//           timer = null;
+//       },wait)
+//       if(callNow) result = func.apply(context,args)
+//     }else{
+//       timeout = setTimeout(()=>{
+//         result = func.apply(context,args)
+//       },await)
+//     }
+//     return result
+//   }
+//   debounced.cancel = function(){
+//     clearTimeout(timeout);
+//     timeout = null
+//   }
+//   return debounced;
+// }
