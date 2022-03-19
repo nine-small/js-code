@@ -17,7 +17,7 @@ Array.prototype._forEach = function (callbackFn) {
   }
 };
 
-// reduce
+// reduce   
 
 Array.prototype._reduce = function (callbackFn) {
   let _arr = this;
